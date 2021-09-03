@@ -8,8 +8,8 @@ import styles from './home.module.scss'
 
 interface HomeProps {
   product: {
-    priceId: string,
-    amount: number
+    priceId: string;
+    amount: string;
   } 
 }
 
@@ -27,7 +27,7 @@ export default function Home({ product }: HomeProps) {
             Get access to all the publications <br/>
             <span>for {product.amount} month</span>
           </p>
-          <SubscribeButton priceId={product.priceId} />
+          <SubscribeButton />
         </section>
         <img src="/images/avatar.svg" alt="girl sitting on a chair with one leg tucked under the other leg, on the table a cup of coffee, a laptop and some books. The girl is working on the laptop" />
       </main>
