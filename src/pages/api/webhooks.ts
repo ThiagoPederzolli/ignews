@@ -20,7 +20,10 @@ async function buffer(readable: Readable) {
 export const config = {
   api: {
     bodyParser: false
-  }
+  },
+  "enabled_events": [
+    "*"
+  ],
 }
 
 const relevantEvents = new Set([
